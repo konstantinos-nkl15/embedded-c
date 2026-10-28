@@ -13,4 +13,6 @@ void clear_CTRL(struct driver_reg *driver_reg, int i);
 
 void set_STATUS(struct driver_reg *driver_reg);
 void clear_STATUS(struct driver_reg *driver_reg);
+
+void print_reg(struct driver_reg *reg_ex);
 #endif
