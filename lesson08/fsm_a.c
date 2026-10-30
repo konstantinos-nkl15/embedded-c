@@ -17,7 +17,7 @@ int main(void)
 {
     enum motor_state state = STOPPED;
     enum motor_event events[7] = {EV_START, EV_START, EV_OVERCURRENT, EV_START, EV_RESET, EV_START, EV_STOP};
-    for (int i = 0; i < (int) ( sizeof(events) / 4 ); i++)
+    for (int i = 0; i < (int) ( sizeof(events) / sizeof(events[0]) ); i++)
     { 
         switch_state(&state, events[i]);
         print_state(state);
