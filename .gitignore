@@ -7,6 +7,7 @@
 # ...και τα αρχεία που θέλουμε
 !*.c
 !*.h
+!*.ino
 !Makefile
 !.gitignore
 !README.md
